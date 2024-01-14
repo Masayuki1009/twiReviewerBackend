@@ -30,7 +30,7 @@ public class TwittererRepository {
                                                       PopularTwitterer.class);
 
                   public List<PopularTwitterer> findPopularTwitterers() {
-                                    String sql = "SELECT t.name, t.account_id AS accountId, tr.average_total_value AS averageTotalValue "
+                                    String sql = "SELECT t.id, t.name, t.account_id AS accountId, tr.average_total_value AS averageTotalValue "
                                                                         +
                                                                         "FROM twitterer t INNER JOIN total_review tr ON t.id = tr.twitterer_id "
                                                                         +
