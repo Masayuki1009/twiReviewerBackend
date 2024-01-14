@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.dto.PopularTwitterer;
-import com.example.service.TwittererService;
+import com.example.service.GetTopTwitterersService;
 
-@RequestMapping(path = HomeController.BASE_URL)
+@RequestMapping(path = GetTopTwitterersController.BASE_URL)
 @RestController
-public class HomeController {
+public class GetTopTwitterersController {
                   public static final String BASE_URL = "/home";
 
-                  private final TwittererService twittererService;
+                  private final GetTopTwitterersService twittererService;
 
                   @Autowired
-                  public HomeController(TwittererService twittererService) {
+                  public GetTopTwitterersController(GetTopTwitterersService twittererService) {
                                     this.twittererService = twittererService;
                   }
 

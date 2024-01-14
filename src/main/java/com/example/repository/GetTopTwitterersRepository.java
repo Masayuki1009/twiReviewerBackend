@@ -11,14 +11,14 @@ import org.springframework.stereotype.Repository;
 import com.example.dto.PopularTwitterer;
 
 @Repository
-public class TwittererRepository {
+public class GetTopTwitterersRepository {
 
                   // JDBCの操作を簡素化(namedParameter(名前付きplaceholder)使える)
                   private final NamedParameterJdbcTemplate template;
 
                   // Dependency Injection
                   @Autowired
-                  public TwittererRepository(NamedParameterJdbcTemplate template) {
+                  public GetTopTwitterersRepository(NamedParameterJdbcTemplate template) {
                                     this.template = template;
                   }
 

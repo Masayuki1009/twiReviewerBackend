@@ -6,16 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.dto.PopularTwitterer;
-import com.example.repository.TwittererRepository;
+import com.example.repository.GetTopTwitterersRepository;
 
 @Service
-public class TwittererService {
+public class GetTopTwitterersService {
 
                   // コンストラインインジェクション。final指定で変更不可
-                  private final TwittererRepository twittererRepository;
+                  private final GetTopTwitterersRepository twittererRepository;
 
                   @Autowired
-                  public TwittererService(TwittererRepository twittererRepository) {
+                  public GetTopTwitterersService(GetTopTwitterersRepository twittererRepository) {
                                     this.twittererRepository = twittererRepository;
                   }
 
