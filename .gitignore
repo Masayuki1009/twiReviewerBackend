@@ -33,3 +33,6 @@ build/
 .vscode/
 
 .DS_Store
+
+#手動
+.env
