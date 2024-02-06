@@ -2,7 +2,7 @@ package com.example.domain;
 
 public class TotalReview {
                   private Long id;
-                  private Long twittererId;
+                  private String twittererId;
                   private Double averageTotalValue;
                   private Integer reviewCount;
 
@@ -15,11 +15,11 @@ public class TotalReview {
                                     this.id = id;
                   }
 
-                  public Long getTwittererId() {
+                  public String getTwittererId() {
                                     return twittererId;
                   }
 
-                  public void setTwittererId(Long twittererId) {
+                  public void setTwittererId(String twittererId) {
                                     this.twittererId = twittererId;
                   }
 
